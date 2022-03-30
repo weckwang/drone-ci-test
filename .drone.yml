@@ -7,13 +7,14 @@ steps:
     image: alpine
     commands:
       - echo "helo world"
+      - echo "hello worldd"
       - cd script
       - touch init.sh
       - echo "mkdir Dockerfile" >> init.sh
 
 trigger:
   branch:
-  - main
+  - master
   event:
   - pull_request
   - push
