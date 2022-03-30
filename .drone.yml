@@ -1,0 +1,19 @@
+kind: pipeline
+type: kubernetes
+name: test-ci
+
+steps:
+  - name: test
+    image: alpine
+    commands:
+      - echo "hello"
+      - cd script
+      - touch init.sh
+      - echo "mkdir Dockerfile" >> init.sh
+
+trigger:
+  branch:
+  - main
+  event:
+  - pull_request
+  - push
