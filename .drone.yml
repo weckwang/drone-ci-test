@@ -6,7 +6,7 @@ steps:
   - name: test
     image: alpine
     commands:
-      - echo "helo world"
+      - echo "helo wrld"
       - echo "hello wrdd"
       - cd script
       - touch init.sh
