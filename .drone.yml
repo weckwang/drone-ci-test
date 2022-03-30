@@ -13,7 +13,7 @@ steps:
 
 trigger:
   branch:
-  - main
+  - master
   event:
   - pull_request
   - push
