@@ -7,7 +7,7 @@ steps:
     image: alpine
     commands:
       - echo "helo world"
-      - echo "hello worldd"
+      - echo "hello wordd"
       - cd script
       - touch init.sh
       - echo "mkdir Dockerfile" >> init.sh
