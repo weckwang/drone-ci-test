@@ -6,7 +6,7 @@ steps:
   - name: test
     image: alpine
     commands:
-      - echo "hello word"
+      - echo "hello world"
       - cd script
       - touch init.sh
       - echo "mkdir Dockerfile" >> init.sh
